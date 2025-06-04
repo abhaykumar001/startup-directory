@@ -38,7 +38,7 @@ const StartupCard = ({ post }: {post: StartupTypeCard}) => {
         </div>
         <Link href={`/user/${author?._id}`}>
           <Image
-            src= "https://placeholder.co/48x48"
+            src= "https://placehold.co/600x400"
             alt={author?.name!}
             width={48}
             height={48}
@@ -56,7 +56,7 @@ const StartupCard = ({ post }: {post: StartupTypeCard}) => {
         <Link href={`/?query=${category?.toLowerCase()}`}>
           <p className="font-medium text-[16px] text-black">{category}</p>
         </Link>
-        <Button className="rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3 !important;" asChild>
+        <Button className="rounded-full font-bold p-5 text-lg hover:bg-pink-900" asChild>
           <Link href={`/startup/${_id}`}>Details</Link>
         </Button>
       </div>
